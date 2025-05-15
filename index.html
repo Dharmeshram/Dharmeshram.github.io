@@ -1,43 +1,229 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>S. M. Dhrmeshram | Software Developer</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. M. Dhrmeshram | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .container {
+      display: flex;
+      padding: 4rem 2rem;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #f5f1ee;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #333;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      max-width: 500px;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro p {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0.5rem 0;
+      padding: 0.6rem 1.2rem;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill-item {
+      background-color: #f0f0f0;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid #e0e0e0;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer div {
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hello</h1>
-        <p>Here's who I am & what I do</p>
-        <a href="resume.pdf" class="btn">Resume</a>
-        <a href="#projects" class="btn">Projects</a>
-    </header>
-    <main>
-        <section id="about">
-            <h2>S. M. Dhrmeshram</h2>
-            <p>Software Developer</p>
-            <p>Experienced in building intelligent systems and modern web apps.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, Flask, PyTorch, TensorFlow/Keras</li>
-                <li>React, JavaScript, HTML & CSS</li>
-                <li>Git & GitHub, API Integration, Machine Learning, Data Analysis</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <h3>Lung Disease Prediction using Chest X-rays</h3>
-            <p>AI model using PyTorch/Keras with Grad-CAM & Integrated Gradients visualization.</p>
-            <h3>React-based E-Commerce Platform</h3>
-            <p>Dynamic UI with product catalog, cart, and payment gateway integration.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Contact: dharmesh@example.com | GitHub: github.com/Dharmeshram</p>
-    </footer>
+  <header>
+    <div class="logo">S. M. Dhrmeshram / Software Developer</div>
+    <nav>
+      <a href="#about" class="active">ABOUT ME</a>
+      <a href="#resume">RESUME</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <div class="container" id="about">
+    <div class="card">
+      <img src="" alt="Profile Picture">
+      <h2>S. M. Dhrmeshram</h2>
+      <p>Software Developer</p>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">🔗</a>
+        <a href="#">🐦</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h1>Hello</h1>
+      <p>Here’s who I am & what I do</p>
+      <div class="buttons">
+        <a href="#resume">RESUME</a>
+        <a href="#projects">PROJECTS</a>
+      </div>
+      <p>I’m a developer passionate about building modern and impactful web applications. I specialize in Python, Flask, Machine Learning, and React with a strong focus on user experience and design.</p>
+    </div>
+  </div>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can download my resume by clicking the link below:</p>
+    <a href="resume.pdf" download style="color:#0077cc; font-weight:bold;">📄 Download Resume</a>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Lung Disease Detection</h3>
+      <p>Developed a deep learning model using PyTorch and Keras to analyze chest X-rays and predict lung diseases such as pneumonia. Integrated Grad-CAM for visual explanations and built a Flask-based web app for user interaction.</p>
+    </div>
+    <div class="project">
+      <h3>React-based E-Commerce Website</h3>
+      <p>Designed and developed a full-stack e-commerce website using React for the frontend. Implemented features such as product listing, cart functionality, authentication, and responsive design for mobile users.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-item">Java</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">Data Structures and Algorithms</div>
+      <div class="skill-item">OOPs</div>
+      <div class="skill-item">Flask</div>
+      <div class="skill-item">React</div>
+      <div class="skill-item">HTML & CSS</div>
+      <div class="skill-item">Git & GitHub</div>
+      <div class="skill-item">Machine Learning</div>
+      <div class="skill-item">Data Analysis</div>
+      <div class="skill-item">API Integration</div>
+      <div class="skill-item">SDLC</div>
+      
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to get in touch for collaborations or questions.</p>
+    <p>Email: your@email.com<br>Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 S. M. Dhrmeshram. Proudly built with HTML & CSS.</p>
+    <div>
+      Call: 123-456-7890 | Write: your@email.com | Follow: 🌐 🔗 🐦 💼
+    </div>
+  </footer>
 </body>
 </html>
